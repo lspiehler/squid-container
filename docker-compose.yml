@@ -9,14 +9,18 @@ services:
       - ./cache:/var/spool/squid
       - ./logs:/var/log/squid
       - ./config:/etc/squid
+    ulimits:
+      nofile:
+        soft: "65536"
+        hard: "65536"
     ports:
       - "3128:3128"
-    entrypoint:
-      - /usr/sbin/squid
-      - -f
-      - /etc/squid/squid.conf
-      - -NYCd
-      - "1"
+    # entrypoint:
+    #   - /usr/sbin/squid
+    #   - -f
+    #   - /etc/squid/squid.conf
+    #   - -NYCd
+    #   - "1"
 
 # volumes:
 #   squid:
