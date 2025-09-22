@@ -1,0 +1,19 @@
+# Test domains
+# .aol.com
+# .aolcdn.com
+# .yimg.com
+# .youtube.com
+# .gstatic.com
+# .googleapis.com
+# .googlevideo.com
+# .ggpht.com
+# .googleusercontent.com
+# .ytimg.com
+# .google.com
+
+# Microsoft Site to check Internet connectivity
+.msftconnecttest.com
+
+# Nuget Dependencies
+.cdn.oneget.org
+.powershellgallery.com
