@@ -1,0 +1,30 @@
+services:
+  squid:
+    container_name: squid
+    image: ubuntu/squid:latest
+    restart: unless-stopped
+    networks:
+      - squid
+    volumes:
+      - ./cache:/var/spool/squid
+      - ./logs:/var/log/squid
+      - ./config:/etc/squid
+    ports:
+      - "3128:3128"
+    entrypoint:
+      - /usr/sbin/squid
+      - -f
+      - /etc/squid/squid.conf
+      - -NYCd
+      - "1"
+
+# volumes:
+#   squid:
+networks:
+  squid:
+    ipam:
+      driver: default
+      config:
+      - subnet: 192.168.104.0/24
+        ip_range: 192.168.104.0/25
+        gateway: 192.168.104.1
