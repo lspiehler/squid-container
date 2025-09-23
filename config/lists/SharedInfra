@@ -17,3 +17,6 @@
 # Nuget Dependencies
 .cdn.oneget.org
 .powershellgallery.com
+
+# Redhat Dependencies
+.redhat.com
