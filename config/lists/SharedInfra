@@ -20,3 +20,6 @@
 
 # Redhat Dependencies
 .redhat.com
+
+# Allow access to Sapphire Azure Storage Account
+sapphirefilerepo.blob.core.windows.net
