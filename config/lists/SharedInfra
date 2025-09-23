@@ -14,7 +14,7 @@
 # Microsoft Site to check Internet connectivity
 .msftconnecttest.com
 
-# Nuget Dependencies
+# Nuget Dependencies for Storage provisioning and SQL installation
 .cdn.oneget.org
 .powershellgallery.com
 
