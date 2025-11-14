@@ -5,7 +5,7 @@ docker compose up -d
 docker compose down
 
 ## Watch logs
-docker logs -f squid
+docker logs -f --tail 50 squid
 
 ## Reload config
 docker exec -it squid squid -k reconfigure

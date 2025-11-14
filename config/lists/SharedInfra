@@ -9,7 +9,9 @@
 # .ggpht.com
 # .googleusercontent.com
 # .ytimg.com
-# .google.com
+.google.com
+.facebook.com
+.fbcdn.net
 
 # Microsoft Site to check Internet connectivity
 .msftconnecttest.com
@@ -23,3 +25,6 @@
 
 # Allow access to Sapphire Azure Storage Account
 sapphirefilerepo.blob.core.windows.net
+
+# SSM Agent Dependencies
+s3.amazonaws.com
